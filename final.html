@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="final.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+/* .form-switch .form-check-input {
+  --bs-form-switch-bg: url("https://hips.hearstapps.com/hmg-prod/images/fall-quotes-autumn-beauty-64a8879f6d38e.jpeg viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  width: 2em;
+  margin-left: -2.5em;
+  background-image: var(--bs-form-switch-bg);
+  background-position: left center;
+  border-radius: 2em;
+  transition: background-position 0.15s ease-in-out;
+} */
+.form-check-input{
+    background-color: white;
+}
+</style>
+<body>
+    <h1><U>STUDENT REGISTRATION FORM</U></h1>
+    <div class="container bg ">
+    <form action="#">
+        <label for="fname"  class="form-label">FIRST NAME</label>
+        <input type="text" class="form-control" maxlength="30" pattern="[A-Za-z]">{max 30 characters a-z and A-Z} <br/><br/>
+        <label for="lname" class="form-label">LAST NAME</label>
+        <input type="text" class="form-control" maxlength="30" pattern="[A-Za-z]">{max 30 characters a-z and A-Z}<br/><br/>
+        <label for="password" class="form-label">PASSWORD</label>
+        <input type="password" class="form-control" maxlength="30" pattern="[A-Za-z]">{max 30 characters a-z and A-Z}<br/><br/>
+
+        <label for="dob" class="form-label">DATE OF BIRTH</label>&nbsp;
+    <div class="d-inline-flex justify-content-evenly">
+        <select name="dob" id="dob" class="form-select w-25">
+            <option value="dob">Day:</option>
+            <option value="dob">1</option>
+            <option value="dob">2</option>
+            <option value="dob">3</option>
+            <option value="dob">4</option>
+            <option value="dob">5</option>
+            <option value="dob">6</option>
+            <option value="dob">7</option>
+            <option value="dob">8</option>
+            <option value="dob">9</option>
+            <option value="dob">10</option>
+            <option value="dob">11</option>
+            <option value="dob">12</option>
+            <option value="dob">13</option>
+            <option value="dob">14</option>
+            <option value="dob">15</option>
+            <option value="dob">16</option>
+            <option value="dob">17</option>
+            <option value="dob">18</option>
+            <option value="dob">19</option>
+            <option value="dob">20</option>
+            <option value="dob">21</option>
+            <option value="dob">22</option>
+            <option value="dob">23</option>
+            <option value="dob">24</option>
+            <option value="dob">25</option>
+            <option value="dob">26</option>
+            <option value="dob">27</option>
+            <option value="dob">28</option>
+            <option value="dob">29</option>
+            <option value="dob">30</option>
+            <option value="dob">31</option>
+        </select>
+        <select name="dob" id="dob" class="form-select w-25">
+            <option value="month">Month:</option>
+            <option value="month">January</option>
+            <option value="month">Febrauary</option>
+            <option value="month">March</option>
+            <option value="month">April</option>
+            <option value="month">May</option>
+            <option value="month">June</option>
+            <option value="month">July</option>
+            <option value="month">August</option>
+            <option value="month">Sepetember</option>
+            <option value="month">October</option>
+            <option value="month">November</option>
+            <option value="month">December</option>
+        </select>
+        <select name="dob" id="dob" class="form-select w-25">
+            <option value="year">Year:</option>
+            <option value="year">1994</option>
+            <option value="year">1995</option>
+            <option value="year">1996</option>
+            <option value="year">1997</option>
+            <option value="year">1998</option>
+            <option value="year">1999</option>
+            <option value="year">2000</option>
+            <option value="year">2001</option>
+            <option value="year">2002</option>
+            <option value="year">2003</option>
+            <option value="year">2004</option>
+            <option value="year">2005</option>
+            <option value="year">2006</option>
+            <option value="year">2007</option>
+        </select>
+    </div>    <br/><br/>
+
+        <label for="email" class="form-label">EMAIL ID</label>
+        <input type="email" class="form-control" placeholder="Disabled input" disabled><br/><br/>
+        
+        <div class="input-group">
+        <label for="number" class="form-label">MOBILE NUMBER</label>
+        <input type="tel" class="form-control" maxlength="10">{10 digit number}<br/><br/>
+        </div>
+        <!-- Gender -->
+        <label for="gender" class="form-check-label" name="gender">GENDER</label><br/>
+        
+        <input type="radio" class="form-check-input" name="gender">
+        <label for="male" class="form-check-label" name="gender">Male</label>
+        
+        <input type="radio" class="form-check-input" name="gender">
+        <label for="female" class="form-check-label" name="gender">Female</label><br/><br/>
+        
+        <!-- Address -->
+        <label for="address" class="form-label">ADDRESS</label>
+        <textarea class="form-control" name="address" id="" cols="30" rows="10"></textarea><br/><br/>
+        <label for="city" class="form-label">CITY</label>
+        <input type="text" class="form-control" maxlength="30">{max 30 characters a-z and A-Z}<br/><br/>
+        <label for="pincode">PINCODE</label>
+        <input type="text" class="form-control" maxlength="6">{6 digit number}<br/><br/>
+        <label for="state" class="form-label">STATE</label>
+        <input type="text" class="form-control">{max 30 characters a-z and A-Z}<br/><br/>
+ <div class="d-inline-flex">
+        <label for="Anti-Indian">Anti-Indian</label>&nbsp;
+        <div class="form-check form-switch">  
+            <label for="country" class="form-label">Indian</label>
+        <input type="checkbox" class="form-check-input form-switch" id="autumn" name="indian" value="yes" id="Indian" ><br/>
+        <label for="Indian"></label>
+    </div>
+</div><br/>
+
+        <label for="hobbies" class="form-label">HOBBIES</label><br/>
+
+        <input type="checkbox" class="form-check-input border-warning" name="Drawing" id="hobbies">
+        <label for="Drawing" class="form-check-label " id="hobbies">Drawing</label>
+
+        <input type="checkbox" class="form-check-input" name="Singing" id="hobbies">
+        <label for="Singing"  class="form-check-label" id="hobbies">Singing</label>
+
+        <input type="checkbox" class="form-check-input" name="Dancing" id="hobbies">
+        <label for="Dancing"  class="form-check-label" id="hobbies">Dancing</label>
+        
+        <input type="checkbox" class="form-check-input" name="Sketching" id="hobbies">
+        <label for="Sketching" class="form-check-label" id="hobbies">Sketching</label><br/>
+ 
+        <input type="checkbox" class="form-check-input" name="Others" id="hobbies">
+        <label for="Others" class="form-check-label" id="hobbies">Others</label>
+        <input type="text" class="form-control"><br/><br/>
+    <table>
+        <label for="qual">QUALIFICATION</label>
+        <tr><th>Sl.No.</th>
+        <th>Examination</th>
+        <th>Board</th>
+        <th>Percentage</th>
+        <th>Year of Passing</th>
+        </tr>
+        <tr><td>1.</td>
+        <td>Class X</td>
+        <td><input type="text" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr><td>2.</td>
+        <td>Class XII</td>
+        <td><input type="text" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr><td>3.</td>
+            <td>Graduation</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr><td>4.</td>
+                <td>Masters</td>
+                <td><input type="text" class="form-control"></td>
+                <td><input type="text" class="form-control"></tad>
+                <td><input type="text" class="form-control"></td>
+                </tr>
+    </table><br/>
+<label for="courses" name="courses">Courses Applied for</label>
+<label for="bca">BCA</label>
+<input type="radio" class="form-control-radio" name="courses">
+<label for="Bcom">B.Com</label>
+<input type="radio" class="form-control-radio" name="courses">
+<label for="bsc">B.Sc</label>
+<input type="radio" class="form-control-radio" name="courses">
+<label for="ba">B.A</label>
+<input type="radio" class="form-control-radio" name="courses"><br/>    
+<input type="submit" class="btn bg-dark text-info" value="Submit">
+<input type="reset" class="btn bg-dark text-info"  value="reset">    
+</form>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
